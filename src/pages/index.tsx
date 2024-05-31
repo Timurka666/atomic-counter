@@ -5,6 +5,7 @@ import styles from "@/styles/Home.module.css";
 import Button from "@/atoms/button";
 import Text from "@/atoms/text";
 import ButtonText from "@/molecules/buttonText";
+import Counter from "@/organisms/counter";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +19,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
-        
+        <Counter />
       </main>
     </>
   );

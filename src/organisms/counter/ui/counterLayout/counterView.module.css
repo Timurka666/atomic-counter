@@ -1,0 +1,16 @@
+.counterView {
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    border: solid rgb(143, 143, 143) 2px;
+    padding: 2rem;
+    border-radius: 20px;
+    background-color: rgb(32, 32, 32);
+}
+
+.counterButtons {
+    display: flex;
+    gap: 1rem;
+}
