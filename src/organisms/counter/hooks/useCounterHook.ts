@@ -1,5 +1,6 @@
 import { useContext } from "react"
 import { CounterContext, ReducerCounterContext } from "../model/context"
+import { StateType } from "../model/state"
 
 export default function useCounter() {
     const counter = useContext(CounterContext)
@@ -20,5 +21,5 @@ export default function useCounter() {
         dispatch({type: 'decrement'})
     }
 
-    return [counter, {handleIncrement, handleDecrement}]
+    return {counter, handlers: {handleIncrement, handleDecrement}}
 }

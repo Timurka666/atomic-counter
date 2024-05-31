@@ -1,10 +1,12 @@
 import Button from "@/atoms/button";
 import Text from "@/atoms/text";
+import { HTMLAttributes } from "react";
 
-interface ButtonTextProps {
+interface ButtonTextProps extends HTMLAttributes<HTMLButtonElement> {
     children: string
 }
 
 export default function ButtonText(props: ButtonTextProps) {
-    return <Button><Text defaultStyle={false}>{props.children}</Text></Button>
+    const {children, ...attributes} = props
+    return <Button {...attributes}><Text defaultStyle={false}>{props.children}</Text></Button>
 }
