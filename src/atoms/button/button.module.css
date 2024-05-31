@@ -1,0 +1,24 @@
+.button {
+    --default-second-color: rgb(218, 218, 218);
+    --active-second-color: rgb(131, 131, 131);
+    min-width: 4rem;
+    min-height: 2rem;
+    font-size: large;
+    color: var(--default-second-color);
+    background-color: rgba(255, 255, 255, 0.2);
+    border: solid var(--default-second-color) 1px;
+    border-radius: 6px;
+    transition: all;
+    transition-duration: .2s;
+
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+
+    &:active {
+        background-color: rgba(255, 255, 255, 0.8);
+        color: var(--active-second-color);
+        border-color: var(--active-second-color);
+    }
+}
